@@ -7,14 +7,11 @@
 	<p></p>
 	<p><a href="https://www.youtube.com/redirect?q=http://teslatheater.z22.web.core.windows.net/">GO FULL SCREEN</a></p>
 	<p></p>
+	<p><a href="https://tv.bell.ca/"><img src=logos/bell.png alt="Bell Fibe TV" style="width:200px;"></a></p>
 	<p></p>
-	<p><a href="https://tv.bell.ca/">Bell Fibe TV</a></p>
+	<p><a href="https://www.disneyplus.com/fr-ca/login"><img src=logos/disney.jpg alt="Disney+" style="width:200px;"></a></p>
 	<p></p>
-	<p></p>
-	<p><a href="https://www.disneyplus.com/fr-ca/login">Disney+</a></p>
-	<p></p>
-	<p></p>
-	<p><a href="https://videotron.com/helix/tele-web">Videotron HELIX</a></p>
+	<p><a href="https://videotron.com/helix/tele-web"><img src=logos/helix.jpg alt="DVideotron HELIX" style="width:200px;"></a></p>
 </main>
 
 <style>
