@@ -5,7 +5,7 @@
 <main>
 	<h1>Welcome to {name}!</h1>
 	<p></p>
-	<p><a href="https://www.youtube.com/redirect?q=http://teslatheater.z22.web.core.windows.net/">GO FULL SCREEN</a></p>
+	<p><a href="https://www.youtube.com/redirect?q=https://bmaltais.github.io/">GO FULL SCREEN</a></p>
 	<p></p>
 	<p><a href="https://tv.bell.ca/"><img src=logos/bell.png alt="Bell Fibe TV" style="width:200px;"></a></p>
 	<p></p>
