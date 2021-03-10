@@ -13,12 +13,9 @@
 
 <body style="background-color:black;" data-new-gr-c-s-check-loaded="14.980.0" data-gr-ext-installed="">
 
-
 	<main class="svelte-16wde2k">
-		<p id="demo1"></p>
-		<p><a href="https://www.youtube.com/redirect?q=https://bmaltais.github.io/"
-				class="img-small svelte-16wde2k"><img style="display:inline" id="img1" src="logos/fullscreen.png"
-					alt="GO FULL SCREEN" class="svelte-16wde2k"></a></p>
+		<p><a href="https://www.youtube.com/redirect?q=https://bmaltais.github.io/"><img style="display:none"
+					id="img1" src="logos/fullscreen.jpg" alt="GO FULL SCREEN" class="svelte-16wde2k"></a></p>
 		<p></p>
 		<p><a href="https://www.crave.ca/en"><img src="logos/crave.png" alt="Crave" align="middle" hspace="20"
 					vspace="10" class="svelte-16wde2k"></a>
@@ -43,7 +40,10 @@
 			<a href="https://www.youtube.com"><img src="logos/youtube.jpg" alt="Youtube" align="middle" hspace="20"
 					vspace="10" class="svelte-16wde2k"></a>
 		</p>
-		<script>var w = window.innerWidth
+		<p id="demo1"></p>
+
+		<script>
+			var w = window.innerWidth
 				|| document.documentElement.clientWidth
 				|| document.body.clientWidth;
 
@@ -53,9 +53,10 @@
 
 			document.getElementById("demo1").innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
 
-			if (w >= 1000) {
-				document.getElementById("img1").style.display = "none";
-			}</script>
+			if (w <= 1200) {
+				document.getElementById("img1").style.display = "inline";
+			}
+		</script>
 	</main>
 </body>
 
