@@ -43,6 +43,7 @@
 					vspace="10" class="svelte-16wde2k"></a>
 		</p>
 		<p id="demo1"></p>
+		<p id="agent"></p>
 
 		<script>
 			var w = window.innerWidth
@@ -53,7 +54,10 @@
 				|| document.documentElement.clientHeight
 				|| document.body.clientHeight;
 
+			var x = navigator.userAgent;
+
 			document.getElementById("demo1").innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
+			document.getElementById("agent").innerHTML = "User-agent header sent: " + x;
 
 			if (w >= 1130) {
 				document.getElementById("img1").style.display = "inline";
