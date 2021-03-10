@@ -1,0 +1,9 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "staticWebApps.appSubpath": "teslatheater",
+    "staticWebApps.apiSubpath": "",
+    "staticWebApps.outputSubpath": "public2"
+}
