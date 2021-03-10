@@ -45,6 +45,7 @@
 					vspace="10" class="svelte-16wde2k"></a>
 		</p>
 		<p id="demo1"></p>
+		<p id="agent"></p>
 
 		<script>
 			var w = window.innerWidth
@@ -59,17 +60,23 @@
 			var url = window.location.href;
 
 			document.getElementById("demo1").innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
-			document.getElementById("agent").innerHTML = "User-agent header sent: " + x;
+			// document.getElementById("agent").innerHTML = "User-agent header sent: " + x;
 
 			// Test if screes resolution is larger than 1130. Tesla full screen resolution is reported as w: 1111 h: 694
 			// Tesla browser when not in full screen is reported as 1130 as of 2021.4.x release
 			if (w >= 1130) {
+				document.getElementById("img1").style.display = "inline";
 				// Test if this is running on a Tesla. If so show the fullscreen button when not in fullscreen only
-				if (x.includes('Tesla')) {
+				if (x.includes("Tesla")) {
 					// Simulate an HTTP redirect:
 					//	window.location.replace("https://www.youtube.com/redirect?q=" + url + "/");
 					// Change image property fron none to inline so it is displayed
-					document.getElementById("img1").style.display = "inline";
+					document.getElementById("agent").innerHTML = "Running in a Tesla Browser";
+				//	document.getElementById("img1").style.display = "inline";
+				}
+				else
+				{
+					document.getElementById("agent").innerHTML = "Running in a Generic Browser";
 				}
 			}
 		</script>
