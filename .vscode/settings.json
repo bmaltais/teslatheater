@@ -5,5 +5,5 @@
     ],
     "staticWebApps.appSubpath": "teslatheater",
     "staticWebApps.apiSubpath": "",
-    "staticWebApps.outputSubpath": "public2"
+    "staticWebApps.outputSubpath": "public"
 }

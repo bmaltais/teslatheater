@@ -1,5 +1,5 @@
 <script>
-	export let name;
+	
 </script>
 
 <main>
@@ -15,7 +15,7 @@
 		<a href="https://netflix.com/"><img src=logos/netflix.png alt="Tubi TV" align="middle" hspace="20" vspace="10"></a>
 		<a href="https://www.paramountplus.com/ca/"><img src=logos/paramountplus.png alt="Paramount+" align="middle" hspace="20" vspace="10"></a>
 		<a href="https://ici.tou.tv/"><img src=logos/toutv.png alt="TouTV" align="middle" hspace="20" vspace="10"></a>
-		<a href="https://tubitv.com/"><img src=logos/tubitv.png alt="Tubi TV" align="middle" hspace="20" vspace="10"></a>
+		<a href="https://tubitv.com/"><img src=logos/tubitv.gif alt="Tubi TV" align="middle" hspace="20" vspace="10"></a>
 		<a href="https://www.twitch.com"><img src=logos/twitch.png alt="Twitch" align="middle" hspace="20" vspace="10"></a>
 		<a href="https://tv.virginmobile.ca/"><img src=logos/virginmobile.svg alt="Twitch" align="middle" hspace="20" vspace="10"></a>
 		<a href="https://www.youtube.com"><img src=logos/youtube.jpg alt="Youtube" align="middle" hspace="20" vspace="10"></a>
