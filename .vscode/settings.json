@@ -3,7 +3,7 @@
         "node_modules{,/**}",
         ".vscode{,/**}"
     ],
-    "staticWebApps.appSubpath": "teslatheater",
+    "staticWebApps.appSubpath": "/",
     "staticWebApps.apiSubpath": "",
-    "staticWebApps.outputSubpath": "public"
+    "staticWebApps.outputSubpath": "test"
 }
