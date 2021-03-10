@@ -4,7 +4,7 @@
 
 <main>
 	<p>
-		<a href="https://www.youtube.com/redirect?q=https://bmaltais.github.io/" class="img-small"><img style="display:none" id="img1" src=logos/fullscreen.png alt="GO FULL SCREEN"></a> <!--only display this if the variable c == true in the script-->
+		<a href="https://www.youtube.com/redirect?q=https://bmaltais.github.io/" class="img-small"><img style="display:inline" id="img1" src=logos/fullscreen.png alt="GO FULL SCREEN"></a> <!--only display this if the variable c == true in the script-->
 	</p>
 	<p></p>
 	<p>
@@ -32,8 +32,8 @@
 
 		document.getElementById("demo1").innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
 
-		if(w <= 1500) {
-				document.getElementById( "img1" ).style.display = "inline"; 
+		if(w >= 1500) {
+				document.getElementById( "img1" ).style.display = "none"; 
 		}
 	</script>
 </main>

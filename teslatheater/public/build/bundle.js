@@ -1,2 +1,645 @@
-var app=function(){"use strict";function t(){}function e(t){return t()}function n(){return Object.create(null)}function s(t){t.forEach(e)}function a(t){return"function"==typeof t}function o(t,e){return t!=t?e==e:t!==e||t&&"object"==typeof t||"function"==typeof t}function l(t){t.parentNode.removeChild(t)}let c;function i(t){c=t}const r=[],d=[],u=[],p=[],g=Promise.resolve();let h=!1;function m(t){u.push(t)}let f=!1;const w=new Set;function v(){if(!f){f=!0;do{for(let t=0;t<r.length;t+=1){const e=r[t];i(e),b(e.$$)}for(i(null),r.length=0;d.length;)d.pop()();for(let t=0;t<u.length;t+=1){const e=u[t];w.has(e)||(w.add(e),e())}u.length=0}while(r.length);for(;p.length;)p.pop()();h=!1,f=!1,w.clear()}}function b(t){if(null!==t.fragment){t.update(),s(t.before_update);const e=t.dirty;t.dirty=[-1],t.fragment&&t.fragment.p(t.ctx,e),t.after_update.forEach(m)}}const $=new Set;function y(t,e){-1===t.$$.dirty[0]&&(r.push(t),h||(h=!0,g.then(v)),t.$$.dirty.fill(0)),t.$$.dirty[e/31|0]|=1<<e%31}function k(o,r,d,u,p,g,h=[-1]){const f=c;i(o);const w=o.$$={fragment:null,ctx:null,props:g,update:t,not_equal:p,bound:n(),on_mount:[],on_destroy:[],on_disconnect:[],before_update:[],after_update:[],context:new Map(f?f.$$.context:[]),callbacks:n(),dirty:h,skip_bound:!1};let b=!1;if(w.ctx=d?d(o,r.props||{},((t,e,...n)=>{const s=n.length?n[0]:e;return w.ctx&&p(w.ctx[t],w.ctx[t]=s)&&(!w.skip_bound&&w.bound[t]&&w.bound[t](s),b&&y(o,t)),e})):[],w.update(),b=!0,s(w.before_update),w.fragment=!!u&&u(w.ctx),r.target){if(r.hydrate){const t=function(t){return Array.from(t.childNodes)}(r.target);w.fragment&&w.fragment.l(t),t.forEach(l)}else w.fragment&&w.fragment.c();r.intro&&((k=o.$$.fragment)&&k.i&&($.delete(k),k.i(_))),function(t,n,o,l){const{fragment:c,on_mount:i,on_destroy:r,after_update:d}=t.$$;c&&c.m(n,o),l||m((()=>{const n=i.map(e).filter(a);r?r.push(...n):s(n),t.$$.on_mount=[]})),d.forEach(m)}(o,r.target,r.anchor,r.customElement),v()}var k,_;i(f)}function _(e){let n;return{c(){var t,e,s,a;t="main",n=document.createElement(t),n.innerHTML='<p><a href="https://www.youtube.com/redirect?q=https://bmaltais.github.io/" class="img-small svelte-16wde2k"><img style="display:none" id="img1" src="logos/fullscreen.png" alt="GO FULL SCREEN" class="svelte-16wde2k"/></a></p> \n\t<p></p> \n\t<p><a href="https://www.crave.ca/en"><img src="logos/crave.png" alt="Crave" align="middle" hspace="20" vspace="10" class="svelte-16wde2k"/></a> \n\t\t<a href="https://www.disneyplus.com/fr-ca/login"><img src="logos/disney.svg" alt="Disney+" align="middle" hspace="20" vspace="10" class="svelte-16wde2k"/></a> \n\t\t<a href="https://www.crave.ca/en/hbo"><img src="logos/hbogo.gif" alt="HBO" align="middle" hspace="20" vspace="10" class="svelte-16wde2k"/></a> \n\t\t<a href="https://tv.bell.ca/"><img src="logos/bell.png" alt="Bell Fibe TV" align="middle" hspace="20" vspace="10" class="svelte-16wde2k"/></a> \n\t\t<a href="https://netflix.com/"><img src="logos/netflix.png" alt="Tubi TV" align="middle" hspace="20" vspace="10" class="svelte-16wde2k"/></a> \n\t\t<a href="https://www.paramountplus.com/ca/"><img src="logos/paramountplus.png" alt="Paramount+" align="middle" hspace="20" vspace="10" class="svelte-16wde2k"/></a> \n\t\t<a href="https://ici.tou.tv/"><img src="logos/toutv.png" alt="TouTV" align="middle" hspace="20" vspace="10" class="svelte-16wde2k"/></a> \n\t\t<a href="https://tubitv.com/"><img src="logos/tubitv.gif" alt="Tubi TV" align="middle" hspace="20" vspace="10" class="svelte-16wde2k"/></a> \n\t\t<a href="https://www.twitch.com"><img src="logos/twitch.png" alt="Twitch" align="middle" hspace="20" vspace="10" class="svelte-16wde2k"/></a> \n\t\t<a href="https://tv.virginmobile.ca/"><img src="logos/virginmobile.svg" alt="Twitch" align="middle" hspace="20" vspace="10" class="svelte-16wde2k"/></a> \n\t\t<a href="https://www.youtube.com"><img src="logos/youtube.jpg" alt="Youtube" align="middle" hspace="20" vspace="10" class="svelte-16wde2k"/></a></p> \n\t<p id="demo1"></p> \n\t<script>var w = window.innerWidth\n\t\t|| document.documentElement.clientWidth\n\t\t|| document.body.clientWidth;\n\n\t\tvar h = window.innerHeight\n\t\t|| document.documentElement.clientHeight\n\t\t|| document.body.clientHeight;\n\n\t\tdocument.getElementById("demo1").innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";\n\n\t\tif(w <= 1500) {\n\t\t\t\tdocument.getElementById( "img1" ).style.display = "inline"; \n\t\t}<\/script>',e=n,s="class",null==(a="svelte-16wde2k")?e.removeAttribute(s):e.getAttribute(s)!==a&&e.setAttribute(s,a)},m(t,e){!function(t,e,n){t.insertBefore(e,n||null)}(t,n,e)},p:t,i:t,o:t,d(t){t&&l(n)}}}return new class extends class{$destroy(){!function(t,e){const n=t.$$;null!==n.fragment&&(s(n.on_destroy),n.fragment&&n.fragment.d(e),n.on_destroy=n.fragment=null,n.ctx=[])}(this,1),this.$destroy=t}$on(t,e){const n=this.$$.callbacks[t]||(this.$$.callbacks[t]=[]);return n.push(e),()=>{const t=n.indexOf(e);-1!==t&&n.splice(t,1)}}$set(t){var e;this.$$set&&(e=t,0!==Object.keys(e).length)&&(this.$$.skip_bound=!0,this.$$set(t),this.$$.skip_bound=!1)}}{constructor(t){super(),k(this,t,null,_,o,{})}}({target:document.body,props:{name:"Tesla Theater"}})}();
+
+(function(l, r) { if (l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (window.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(window.document);
+var app = (function () {
+    'use strict';
+
+    function noop() { }
+    function add_location(element, file, line, column, char) {
+        element.__svelte_meta = {
+            loc: { file, line, column, char }
+        };
+    }
+    function run(fn) {
+        return fn();
+    }
+    function blank_object() {
+        return Object.create(null);
+    }
+    function run_all(fns) {
+        fns.forEach(run);
+    }
+    function is_function(thing) {
+        return typeof thing === 'function';
+    }
+    function safe_not_equal(a, b) {
+        return a != a ? b == b : a !== b || ((a && typeof a === 'object') || typeof a === 'function');
+    }
+    function is_empty(obj) {
+        return Object.keys(obj).length === 0;
+    }
+
+    function append(target, node) {
+        target.appendChild(node);
+    }
+    function insert(target, node, anchor) {
+        target.insertBefore(node, anchor || null);
+    }
+    function detach(node) {
+        node.parentNode.removeChild(node);
+    }
+    function element(name) {
+        return document.createElement(name);
+    }
+    function text(data) {
+        return document.createTextNode(data);
+    }
+    function space() {
+        return text(' ');
+    }
+    function attr(node, attribute, value) {
+        if (value == null)
+            node.removeAttribute(attribute);
+        else if (node.getAttribute(attribute) !== value)
+            node.setAttribute(attribute, value);
+    }
+    function children(element) {
+        return Array.from(element.childNodes);
+    }
+    function set_style(node, key, value, important) {
+        node.style.setProperty(key, value, important ? 'important' : '');
+    }
+    function custom_event(type, detail) {
+        const e = document.createEvent('CustomEvent');
+        e.initCustomEvent(type, false, false, detail);
+        return e;
+    }
+
+    let current_component;
+    function set_current_component(component) {
+        current_component = component;
+    }
+
+    const dirty_components = [];
+    const binding_callbacks = [];
+    const render_callbacks = [];
+    const flush_callbacks = [];
+    const resolved_promise = Promise.resolve();
+    let update_scheduled = false;
+    function schedule_update() {
+        if (!update_scheduled) {
+            update_scheduled = true;
+            resolved_promise.then(flush);
+        }
+    }
+    function add_render_callback(fn) {
+        render_callbacks.push(fn);
+    }
+    let flushing = false;
+    const seen_callbacks = new Set();
+    function flush() {
+        if (flushing)
+            return;
+        flushing = true;
+        do {
+            // first, call beforeUpdate functions
+            // and update components
+            for (let i = 0; i < dirty_components.length; i += 1) {
+                const component = dirty_components[i];
+                set_current_component(component);
+                update(component.$$);
+            }
+            set_current_component(null);
+            dirty_components.length = 0;
+            while (binding_callbacks.length)
+                binding_callbacks.pop()();
+            // then, once components are updated, call
+            // afterUpdate functions. This may cause
+            // subsequent updates...
+            for (let i = 0; i < render_callbacks.length; i += 1) {
+                const callback = render_callbacks[i];
+                if (!seen_callbacks.has(callback)) {
+                    // ...so guard against infinite loops
+                    seen_callbacks.add(callback);
+                    callback();
+                }
+            }
+            render_callbacks.length = 0;
+        } while (dirty_components.length);
+        while (flush_callbacks.length) {
+            flush_callbacks.pop()();
+        }
+        update_scheduled = false;
+        flushing = false;
+        seen_callbacks.clear();
+    }
+    function update($$) {
+        if ($$.fragment !== null) {
+            $$.update();
+            run_all($$.before_update);
+            const dirty = $$.dirty;
+            $$.dirty = [-1];
+            $$.fragment && $$.fragment.p($$.ctx, dirty);
+            $$.after_update.forEach(add_render_callback);
+        }
+    }
+    const outroing = new Set();
+    function transition_in(block, local) {
+        if (block && block.i) {
+            outroing.delete(block);
+            block.i(local);
+        }
+    }
+    function mount_component(component, target, anchor, customElement) {
+        const { fragment, on_mount, on_destroy, after_update } = component.$$;
+        fragment && fragment.m(target, anchor);
+        if (!customElement) {
+            // onMount happens before the initial afterUpdate
+            add_render_callback(() => {
+                const new_on_destroy = on_mount.map(run).filter(is_function);
+                if (on_destroy) {
+                    on_destroy.push(...new_on_destroy);
+                }
+                else {
+                    // Edge case - component was destroyed immediately,
+                    // most likely as a result of a binding initialising
+                    run_all(new_on_destroy);
+                }
+                component.$$.on_mount = [];
+            });
+        }
+        after_update.forEach(add_render_callback);
+    }
+    function destroy_component(component, detaching) {
+        const $$ = component.$$;
+        if ($$.fragment !== null) {
+            run_all($$.on_destroy);
+            $$.fragment && $$.fragment.d(detaching);
+            // TODO null out other refs, including component.$$ (but need to
+            // preserve final state?)
+            $$.on_destroy = $$.fragment = null;
+            $$.ctx = [];
+        }
+    }
+    function make_dirty(component, i) {
+        if (component.$$.dirty[0] === -1) {
+            dirty_components.push(component);
+            schedule_update();
+            component.$$.dirty.fill(0);
+        }
+        component.$$.dirty[(i / 31) | 0] |= (1 << (i % 31));
+    }
+    function init(component, options, instance, create_fragment, not_equal, props, dirty = [-1]) {
+        const parent_component = current_component;
+        set_current_component(component);
+        const $$ = component.$$ = {
+            fragment: null,
+            ctx: null,
+            // state
+            props,
+            update: noop,
+            not_equal,
+            bound: blank_object(),
+            // lifecycle
+            on_mount: [],
+            on_destroy: [],
+            on_disconnect: [],
+            before_update: [],
+            after_update: [],
+            context: new Map(parent_component ? parent_component.$$.context : []),
+            // everything else
+            callbacks: blank_object(),
+            dirty,
+            skip_bound: false
+        };
+        let ready = false;
+        $$.ctx = instance
+            ? instance(component, options.props || {}, (i, ret, ...rest) => {
+                const value = rest.length ? rest[0] : ret;
+                if ($$.ctx && not_equal($$.ctx[i], $$.ctx[i] = value)) {
+                    if (!$$.skip_bound && $$.bound[i])
+                        $$.bound[i](value);
+                    if (ready)
+                        make_dirty(component, i);
+                }
+                return ret;
+            })
+            : [];
+        $$.update();
+        ready = true;
+        run_all($$.before_update);
+        // `false` as a special case of no DOM component
+        $$.fragment = create_fragment ? create_fragment($$.ctx) : false;
+        if (options.target) {
+            if (options.hydrate) {
+                const nodes = children(options.target);
+                // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+                $$.fragment && $$.fragment.l(nodes);
+                nodes.forEach(detach);
+            }
+            else {
+                // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+                $$.fragment && $$.fragment.c();
+            }
+            if (options.intro)
+                transition_in(component.$$.fragment);
+            mount_component(component, options.target, options.anchor, options.customElement);
+            flush();
+        }
+        set_current_component(parent_component);
+    }
+    /**
+     * Base class for Svelte components. Used when dev=false.
+     */
+    class SvelteComponent {
+        $destroy() {
+            destroy_component(this, 1);
+            this.$destroy = noop;
+        }
+        $on(type, callback) {
+            const callbacks = (this.$$.callbacks[type] || (this.$$.callbacks[type] = []));
+            callbacks.push(callback);
+            return () => {
+                const index = callbacks.indexOf(callback);
+                if (index !== -1)
+                    callbacks.splice(index, 1);
+            };
+        }
+        $set($$props) {
+            if (this.$$set && !is_empty($$props)) {
+                this.$$.skip_bound = true;
+                this.$$set($$props);
+                this.$$.skip_bound = false;
+            }
+        }
+    }
+
+    function dispatch_dev(type, detail) {
+        document.dispatchEvent(custom_event(type, Object.assign({ version: '3.35.0' }, detail)));
+    }
+    function append_dev(target, node) {
+        dispatch_dev('SvelteDOMInsert', { target, node });
+        append(target, node);
+    }
+    function insert_dev(target, node, anchor) {
+        dispatch_dev('SvelteDOMInsert', { target, node, anchor });
+        insert(target, node, anchor);
+    }
+    function detach_dev(node) {
+        dispatch_dev('SvelteDOMRemove', { node });
+        detach(node);
+    }
+    function attr_dev(node, attribute, value) {
+        attr(node, attribute, value);
+        if (value == null)
+            dispatch_dev('SvelteDOMRemoveAttribute', { node, attribute });
+        else
+            dispatch_dev('SvelteDOMSetAttribute', { node, attribute, value });
+    }
+    function validate_slots(name, slot, keys) {
+        for (const slot_key of Object.keys(slot)) {
+            if (!~keys.indexOf(slot_key)) {
+                console.warn(`<${name}> received an unexpected slot "${slot_key}".`);
+            }
+        }
+    }
+    /**
+     * Base class for Svelte components with some minor dev-enhancements. Used when dev=true.
+     */
+    class SvelteComponentDev extends SvelteComponent {
+        constructor(options) {
+            if (!options || (!options.target && !options.$$inline)) {
+                throw new Error("'target' is a required option");
+            }
+            super();
+        }
+        $destroy() {
+            super.$destroy();
+            this.$destroy = () => {
+                console.warn('Component was already destroyed'); // eslint-disable-line no-console
+            };
+        }
+        $capture_state() { }
+        $inject_state() { }
+    }
+
+    /* src/App.svelte generated by Svelte v3.35.0 */
+
+    const file = "src/App.svelte";
+
+    function create_fragment(ctx) {
+    	let main;
+    	let p0;
+    	let a0;
+    	let img0;
+    	let img0_src_value;
+    	let t0;
+    	let p1;
+    	let t1;
+    	let p2;
+    	let a1;
+    	let img1;
+    	let img1_src_value;
+    	let t2;
+    	let a2;
+    	let img2;
+    	let img2_src_value;
+    	let t3;
+    	let a3;
+    	let img3;
+    	let img3_src_value;
+    	let t4;
+    	let a4;
+    	let img4;
+    	let img4_src_value;
+    	let t5;
+    	let a5;
+    	let img5;
+    	let img5_src_value;
+    	let t6;
+    	let a6;
+    	let img6;
+    	let img6_src_value;
+    	let t7;
+    	let a7;
+    	let img7;
+    	let img7_src_value;
+    	let t8;
+    	let a8;
+    	let img8;
+    	let img8_src_value;
+    	let t9;
+    	let a9;
+    	let img9;
+    	let img9_src_value;
+    	let t10;
+    	let a10;
+    	let img10;
+    	let img10_src_value;
+    	let t11;
+    	let a11;
+    	let img11;
+    	let img11_src_value;
+    	let t12;
+    	let p3;
+    	let t13;
+    	let script;
+
+    	const block = {
+    		c: function create() {
+    			main = element("main");
+    			p0 = element("p");
+    			a0 = element("a");
+    			img0 = element("img");
+    			t0 = space();
+    			p1 = element("p");
+    			t1 = space();
+    			p2 = element("p");
+    			a1 = element("a");
+    			img1 = element("img");
+    			t2 = space();
+    			a2 = element("a");
+    			img2 = element("img");
+    			t3 = space();
+    			a3 = element("a");
+    			img3 = element("img");
+    			t4 = space();
+    			a4 = element("a");
+    			img4 = element("img");
+    			t5 = space();
+    			a5 = element("a");
+    			img5 = element("img");
+    			t6 = space();
+    			a6 = element("a");
+    			img6 = element("img");
+    			t7 = space();
+    			a7 = element("a");
+    			img7 = element("img");
+    			t8 = space();
+    			a8 = element("a");
+    			img8 = element("img");
+    			t9 = space();
+    			a9 = element("a");
+    			img9 = element("img");
+    			t10 = space();
+    			a10 = element("a");
+    			img10 = element("img");
+    			t11 = space();
+    			a11 = element("a");
+    			img11 = element("img");
+    			t12 = space();
+    			p3 = element("p");
+    			t13 = space();
+    			script = element("script");
+    			script.textContent = "var w = window.innerWidth\n\t\t|| document.documentElement.clientWidth\n\t\t|| document.body.clientWidth;\n\n\t\tvar h = window.innerHeight\n\t\t|| document.documentElement.clientHeight\n\t\t|| document.body.clientHeight;\n\n\t\tdocument.getElementById(\"demo1\").innerHTML = \"Browser inner window width: \" + w + \", height: \" + h + \".\";\n\n\t\tif(w >= 1500) {\n\t\t\t\tdocument.getElementById( \"img1\" ).style.display = \"none\"; \n\t\t}";
+    			set_style(img0, "display", "inline");
+    			attr_dev(img0, "id", "img1");
+    			if (img0.src !== (img0_src_value = "logos/fullscreen.png")) attr_dev(img0, "src", img0_src_value);
+    			attr_dev(img0, "alt", "GO FULL SCREEN");
+    			attr_dev(img0, "class", "svelte-16wde2k");
+    			add_location(img0, file, 6, 93, 127);
+    			attr_dev(a0, "href", "https://www.youtube.com/redirect?q=https://bmaltais.github.io/");
+    			attr_dev(a0, "class", "img-small svelte-16wde2k");
+    			add_location(a0, file, 6, 2, 36);
+    			add_location(p0, file, 5, 1, 30);
+    			add_location(p1, file, 8, 1, 288);
+    			if (img1.src !== (img1_src_value = "logos/crave.png")) attr_dev(img1, "src", img1_src_value);
+    			attr_dev(img1, "alt", "Crave");
+    			attr_dev(img1, "align", "middle");
+    			attr_dev(img1, "hspace", "20");
+    			attr_dev(img1, "vspace", "10");
+    			attr_dev(img1, "class", "svelte-16wde2k");
+    			add_location(img1, file, 10, 36, 337);
+    			attr_dev(a1, "href", "https://www.crave.ca/en");
+    			add_location(a1, file, 10, 2, 303);
+    			if (img2.src !== (img2_src_value = "logos/disney.svg")) attr_dev(img2, "src", img2_src_value);
+    			attr_dev(img2, "alt", "Disney+");
+    			attr_dev(img2, "align", "middle");
+    			attr_dev(img2, "hspace", "20");
+    			attr_dev(img2, "vspace", "10");
+    			attr_dev(img2, "class", "svelte-16wde2k");
+    			add_location(img2, file, 11, 51, 469);
+    			attr_dev(a2, "href", "https://www.disneyplus.com/fr-ca/login");
+    			add_location(a2, file, 11, 2, 420);
+    			if (img3.src !== (img3_src_value = "logos/hbogo.gif")) attr_dev(img3, "src", img3_src_value);
+    			attr_dev(img3, "alt", "HBO");
+    			attr_dev(img3, "align", "middle");
+    			attr_dev(img3, "hspace", "20");
+    			attr_dev(img3, "vspace", "10");
+    			attr_dev(img3, "class", "svelte-16wde2k");
+    			add_location(img3, file, 12, 40, 593);
+    			attr_dev(a3, "href", "https://www.crave.ca/en/hbo");
+    			add_location(a3, file, 12, 2, 555);
+    			if (img4.src !== (img4_src_value = "logos/bell.png")) attr_dev(img4, "src", img4_src_value);
+    			attr_dev(img4, "alt", "Bell Fibe TV");
+    			attr_dev(img4, "align", "middle");
+    			attr_dev(img4, "hspace", "20");
+    			attr_dev(img4, "vspace", "10");
+    			attr_dev(img4, "class", "svelte-16wde2k");
+    			add_location(img4, file, 13, 32, 704);
+    			attr_dev(a4, "href", "https://tv.bell.ca/");
+    			add_location(a4, file, 13, 2, 674);
+    			if (img5.src !== (img5_src_value = "logos/netflix.png")) attr_dev(img5, "src", img5_src_value);
+    			attr_dev(img5, "alt", "Tubi TV");
+    			attr_dev(img5, "align", "middle");
+    			attr_dev(img5, "hspace", "20");
+    			attr_dev(img5, "vspace", "10");
+    			attr_dev(img5, "class", "svelte-16wde2k");
+    			add_location(img5, file, 14, 33, 824);
+    			attr_dev(a5, "href", "https://netflix.com/");
+    			add_location(a5, file, 14, 2, 793);
+    			if (img6.src !== (img6_src_value = "logos/paramountplus.png")) attr_dev(img6, "src", img6_src_value);
+    			attr_dev(img6, "alt", "Paramount+");
+    			attr_dev(img6, "align", "middle");
+    			attr_dev(img6, "hspace", "20");
+    			attr_dev(img6, "vspace", "10");
+    			attr_dev(img6, "class", "svelte-16wde2k");
+    			add_location(img6, file, 15, 46, 955);
+    			attr_dev(a6, "href", "https://www.paramountplus.com/ca/");
+    			add_location(a6, file, 15, 2, 911);
+    			if (img7.src !== (img7_src_value = "logos/toutv.png")) attr_dev(img7, "src", img7_src_value);
+    			attr_dev(img7, "alt", "TouTV");
+    			attr_dev(img7, "align", "middle");
+    			attr_dev(img7, "hspace", "20");
+    			attr_dev(img7, "vspace", "10");
+    			attr_dev(img7, "class", "svelte-16wde2k");
+    			add_location(img7, file, 16, 32, 1081);
+    			attr_dev(a7, "href", "https://ici.tou.tv/");
+    			add_location(a7, file, 16, 2, 1051);
+    			if (img8.src !== (img8_src_value = "logos/tubitv.gif")) attr_dev(img8, "src", img8_src_value);
+    			attr_dev(img8, "alt", "Tubi TV");
+    			attr_dev(img8, "align", "middle");
+    			attr_dev(img8, "hspace", "20");
+    			attr_dev(img8, "vspace", "10");
+    			attr_dev(img8, "class", "svelte-16wde2k");
+    			add_location(img8, file, 17, 32, 1194);
+    			attr_dev(a8, "href", "https://tubitv.com/");
+    			add_location(a8, file, 17, 2, 1164);
+    			if (img9.src !== (img9_src_value = "logos/twitch.png")) attr_dev(img9, "src", img9_src_value);
+    			attr_dev(img9, "alt", "Twitch");
+    			attr_dev(img9, "align", "middle");
+    			attr_dev(img9, "hspace", "20");
+    			attr_dev(img9, "vspace", "10");
+    			attr_dev(img9, "class", "svelte-16wde2k");
+    			add_location(img9, file, 18, 35, 1313);
+    			attr_dev(a9, "href", "https://www.twitch.com");
+    			add_location(a9, file, 18, 2, 1280);
+    			if (img10.src !== (img10_src_value = "logos/virginmobile.svg")) attr_dev(img10, "src", img10_src_value);
+    			attr_dev(img10, "alt", "Twitch");
+    			attr_dev(img10, "align", "middle");
+    			attr_dev(img10, "hspace", "20");
+    			attr_dev(img10, "vspace", "10");
+    			attr_dev(img10, "class", "svelte-16wde2k");
+    			add_location(img10, file, 19, 40, 1436);
+    			attr_dev(a10, "href", "https://tv.virginmobile.ca/");
+    			add_location(a10, file, 19, 2, 1398);
+    			if (img11.src !== (img11_src_value = "logos/youtube.jpg")) attr_dev(img11, "src", img11_src_value);
+    			attr_dev(img11, "alt", "Youtube");
+    			attr_dev(img11, "align", "middle");
+    			attr_dev(img11, "hspace", "20");
+    			attr_dev(img11, "vspace", "10");
+    			attr_dev(img11, "class", "svelte-16wde2k");
+    			add_location(img11, file, 20, 36, 1561);
+    			attr_dev(a11, "href", "https://www.youtube.com");
+    			add_location(a11, file, 20, 2, 1527);
+    			add_location(p2, file, 9, 1, 297);
+    			attr_dev(p3, "id", "demo1");
+    			add_location(p3, file, 22, 1, 1653);
+    			add_location(script, file, 23, 1, 1673);
+    			attr_dev(main, "class", "svelte-16wde2k");
+    			add_location(main, file, 4, 0, 22);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, main, anchor);
+    			append_dev(main, p0);
+    			append_dev(p0, a0);
+    			append_dev(a0, img0);
+    			append_dev(main, t0);
+    			append_dev(main, p1);
+    			append_dev(main, t1);
+    			append_dev(main, p2);
+    			append_dev(p2, a1);
+    			append_dev(a1, img1);
+    			append_dev(p2, t2);
+    			append_dev(p2, a2);
+    			append_dev(a2, img2);
+    			append_dev(p2, t3);
+    			append_dev(p2, a3);
+    			append_dev(a3, img3);
+    			append_dev(p2, t4);
+    			append_dev(p2, a4);
+    			append_dev(a4, img4);
+    			append_dev(p2, t5);
+    			append_dev(p2, a5);
+    			append_dev(a5, img5);
+    			append_dev(p2, t6);
+    			append_dev(p2, a6);
+    			append_dev(a6, img6);
+    			append_dev(p2, t7);
+    			append_dev(p2, a7);
+    			append_dev(a7, img7);
+    			append_dev(p2, t8);
+    			append_dev(p2, a8);
+    			append_dev(a8, img8);
+    			append_dev(p2, t9);
+    			append_dev(p2, a9);
+    			append_dev(a9, img9);
+    			append_dev(p2, t10);
+    			append_dev(p2, a10);
+    			append_dev(a10, img10);
+    			append_dev(p2, t11);
+    			append_dev(p2, a11);
+    			append_dev(a11, img11);
+    			append_dev(main, t12);
+    			append_dev(main, p3);
+    			append_dev(main, t13);
+    			append_dev(main, script);
+    		},
+    		p: noop,
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(main);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance($$self, $$props) {
+    	let { $$slots: slots = {}, $$scope } = $$props;
+    	validate_slots("App", slots, []);
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<App> was created with unknown prop '${key}'`);
+    	});
+
+    	return [];
+    }
+
+    class App extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance, create_fragment, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "App",
+    			options,
+    			id: create_fragment.name
+    		});
+    	}
+    }
+
+    const app = new App({
+    	target: document.body,
+    	props: {
+    		name: 'Tesla Theater'
+    	}
+    });
+
+    return app;
+
+}());
 //# sourceMappingURL=bundle.js.map
