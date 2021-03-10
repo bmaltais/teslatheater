@@ -3,6 +3,7 @@
 </script>
 
 <main>
+	<p id="demo1"></p>
 	<p>
 		<a href="https://www.youtube.com/redirect?q=https://bmaltais.github.io/" class="img-small"><img style="display:inline" id="img1" src=logos/fullscreen.png alt="GO FULL SCREEN"></a> <!--only display this if the variable c == true in the script-->
 	</p>
@@ -20,7 +21,6 @@
 		<a href="https://tv.virginmobile.ca/"><img src=logos/virginmobile.svg alt="Twitch" align="middle" hspace="20" vspace="10"></a>
 		<a href="https://www.youtube.com"><img src=logos/youtube.jpg alt="Youtube" align="middle" hspace="20" vspace="10"></a>
 	</p>
-	<p id="demo1"></p>
 	<script>
 		var w = window.innerWidth
 		|| document.documentElement.clientWidth
@@ -32,7 +32,7 @@
 
 		document.getElementById("demo1").innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
 
-		if(w >= 1500) {
+		if(w >= 1000) {
 				document.getElementById( "img1" ).style.display = "none"; 
 		}
 	</script>
