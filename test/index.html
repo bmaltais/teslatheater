@@ -55,12 +55,18 @@
 				|| document.body.clientHeight;
 
 			var x = navigator.userAgent;
+			var url = window.location.href;
 
 			document.getElementById("demo1").innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
 			document.getElementById("agent").innerHTML = "User-agent header sent: " + x;
 
 			if (w >= 1130) {
 				document.getElementById("img1").style.display = "inline";
+				// Test if this is running locally on a PC for testing
+				//if( !url.includes('file://') ) {
+					// Simulate an HTTP redirect:
+				//	window.location.replace("https://www.youtube.com/redirect?q=" + url + "/");
+				//}
 			}
 		</script>
 	</main>
